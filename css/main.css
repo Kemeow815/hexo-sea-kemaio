@@ -43,7 +43,7 @@ body {
   min-width: 320px;
   color: var(--sea-color-text-1);
   background-color: var(--sea-color-main-bg);
-  font-family: var(--sea-font-family-code);
+  font-family: var(--sea-font-family);
 
   /* 解决ios下代码块字体样式偏大问题 */
   text-size-adjust: 100%;
@@ -152,9 +152,8 @@ html[theme=dark] {
 
 /* 字体 */
 :root {
-  --sea-font-family-code: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco,
+  --sea-font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco,
     Consolas, 'Liberation Mono', 'Courier New', monospace;
-  --sea-font-family-microsoft: "Microsoft YaHei";
 }
 
 /* 阴影 */
@@ -166,7 +165,7 @@ code,
 pre {
   color: var(--sea-code-color);
   background: 0 0;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: var(--sea-font-family);
   font-size: 0.875rem;
   text-align: left;
   white-space: pre;
@@ -999,7 +998,8 @@ html[theme=dark] .token.inserted {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
+  padding: 0 4px;
 }
 
 .sea-hero-info__left {
@@ -1007,8 +1007,8 @@ html[theme=dark] .token.inserted {
 }
 
 .sea-hero-info__right {
-  width: 12.5rem;
-  height: 12.5rem;
+  width: 9rem;
+  height: 9rem;
   overflow: hidden;
   border-radius: 50%;
   display: flex;
@@ -1024,8 +1024,9 @@ html[theme=dark] .token.inserted {
 }
 
 .sea-hero-info__intro {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5rem;
+  color: var(--sea-color-text-2);
 }
 
 .sea-hero-info__link-item {
@@ -1035,6 +1036,8 @@ html[theme=dark] .token.inserted {
   display: inline-block;
   margin-bottom: 1rem;
   transition: all .3s;
+  color: var(--sea-color-text-2);
+  font-size: 0.875rem;
 }
 
 .sea-hero-info__link-item:hover {

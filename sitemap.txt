@@ -1,6 +1,6 @@
-https://sea.kemiao.online/archives/index.html
-https://sea.kemiao.online/essays/index.html
 https://sea.kemiao.online/categories/index.html
+https://sea.kemiao.online/essays/index.html
+https://sea.kemiao.online/archives/index.html
 https://sea.kemiao.online/friends/index.html
 https://sea.kemiao.online/messages/index.html
 https://sea.kemiao.online/tags/index.html
